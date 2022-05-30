@@ -1,0 +1,18 @@
+- Okunacak dosyanın adı mutlaka Veri.txt olmalıdır.
+- Veri.txt dosyası makefile çalıştırılacağı zaman makefile'ın, bin klasörü içerisindeki Program.exe çalıştırılacağı zaman bin klasörünün içerisinde bulunmalıdır. 
+- Veri.txt dosyasında her satırda tek bir işlem bulunmalıdır. İkinci bir işlem görmezden gelinecektir.
+
+- Veri.txt dosyasındaki geçerli formatlar:
+E(5661#Ali Sari)
+  E  (   0  #  Ali    Sari    )
+S(54616)
+  S   (  0  )
+
+- Veri.txt dosyasındaki hatalı formatlar:
+E(#Ali Sari) 		//index yazılmamış.
+E(3 Ali Sari)		//# sembolü bulunmuyor.
+E(3#Ali)			//Soyisim bulunmuyor.
+E(3# Sari)			//İsim bulunmuyor.
+S					//index yazılmamış.
+
+- Program hatalı bir formatla karşılaştığında muhtemelen hata verecektir.
